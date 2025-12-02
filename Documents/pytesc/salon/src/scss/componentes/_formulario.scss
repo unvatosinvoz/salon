@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.formulario {
+    width: 100%;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+
+    label {
+        flex: 0 0 10rem;
+    }
+
+    input,
+    textarea {
+        flex: 1;
+        border: none;
+        padding: calc(v.$separacion / 4);
+        border-radius: 1rem;
+
+        &:disabled{
+            background-color: #363535;
+            color: v.$blanco;
+        }
+    }
+
+    // input[type="submit"] {
+    //     // background-color: v.$naranja;
+    //     // color: v.$blanco;
+    //     // font-weight: v.$bold;
+    //     // text-transform: uppercase;
+    //     // cursor: pointer;
+    //     // transition: background-color 0.3s ease;
+
+    //     // &:hover {
+    //     //     background-color: darken(v.$naranja, 10%);
+    //     // }
+    // } // input[type="submit"]
+}
+
+

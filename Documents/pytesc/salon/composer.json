@@ -1,0 +1,23 @@
+{
+    "name": "joehdz/app-salon_php_mvc_js_sass",
+    "description": "Proyecto PHP Mysql etc",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controllers\\": "./controllers/",
+            "Model\\": "./models/",
+            "Classes\\": "./classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Joya",
+            "email": "josuedavidjy60@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^7.0",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

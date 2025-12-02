@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+
+.seccion {
+    padding: 5rem 0;
+    display: none;
+
+    .text-center {
+        text-align: center;
+    }   
+}
+
+.mostrar {
+    display: block;
+}
+.ocultar {
+    display: none;
+}
+.contenido-resumen {
+    background-color: v.$gris-oscuro;
+    // Asegúrate de tener la variable en _variables.scss
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    p {
+        color: v.$blanco;
+        font-family: v.$fuente_principal;
+        font-weight: v.$regular;
+        margin-bottom: 1rem;
+    }
+    span {
+        font-weight: bold;
+        color: v.$azul;
+    font-size: 1.8rem;
+    }
+}
+.contenedor-servicio {
+    margin-top: 1rem;
+    border-bottom: 1px solid v.$azul;
+    &:last-of-type {
+        border-bottom: none;
+        margin-bottom: v.$separacion;
+    }
+}
